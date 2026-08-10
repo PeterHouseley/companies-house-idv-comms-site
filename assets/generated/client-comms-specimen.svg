@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Director IDV client communication pack specimen</title>
+  <desc id="desc">A premium editorial-style compliance pack preview showing approved client email copy, director tracker statuses, FAQ boundaries and chase cadence.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="26" stdDeviation="28" flood-color="#173c32" flood-opacity="0.22"/>
+    </filter>
+    <pattern id="ledger" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0v42" fill="none" stroke="#173c32" stroke-opacity=".08" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="760" fill="#f3f0e8"/>
+  <rect x="32" y="32" width="1136" height="696" rx="38" fill="url(#ledger)" stroke="#b9c8bf"/>
+  <text x="72" y="92" fill="#1f6a52" font-family="Courier New, monospace" font-size="18" font-weight="900" letter-spacing="4">PRACTICE CLIENT ROLLOUT SPECIMEN</text>
+  <text x="72" y="150" fill="#17231f" font-family="Georgia, serif" font-size="58" font-weight="700" letter-spacing="-3">One calm file for the whole IDV conversation.</text>
+  <g filter="url(#shadow)">
+    <rect x="72" y="208" width="468" height="430" rx="24" fill="#fffdf7" stroke="#d7d0c1"/>
+    <rect x="96" y="238" width="168" height="24" rx="12" fill="#dceadf"/>
+    <text x="112" y="256" fill="#1f6a52" font-family="Courier New, monospace" font-size="14" font-weight="900">EMAIL 01 / CLIENT</text>
+    <text x="96" y="315" fill="#17231f" font-family="Georgia, serif" font-size="42" font-weight="700" letter-spacing="-2">What director identity verification means for you</text>
+    <line x1="96" y1="352" x2="512" y2="352" stroke="#173c32" stroke-width="3"/>
+    <rect x="96" y="382" width="392" height="14" rx="7" fill="#60706a" opacity=".35"/>
+    <rect x="96" y="414" width="348" height="14" rx="7" fill="#60706a" opacity=".28"/>
+    <rect x="96" y="446" width="410" height="14" rx="7" fill="#60706a" opacity=".28"/>
+    <rect x="96" y="504" width="154" height="44" rx="22" fill="#173c32"/>
+    <text x="124" y="532" fill="#fffdf7" font-family="Segoe UI, sans-serif" font-size="17" font-weight="800">Send notice</text>
+    <text x="316" y="532" fill="#a74739" font-family="Courier New, monospace" font-size="18" font-weight="900">BOUNDARY: not legal advice</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="590" y="208" width="538" height="218" rx="24" fill="#173c32"/>
+    <text x="622" y="258" fill="#bde2cc" font-family="Courier New, monospace" font-size="16" font-weight="900" letter-spacing="3">READINESS TRACKER</text>
+    <g font-family="Segoe UI, sans-serif" font-size="20" font-weight="800">
+      <rect x="622" y="286" width="474" height="46" rx="12" fill="#fffdf7"/><text x="644" y="316" fill="#17231f">A. Patel</text><rect x="826" y="297" width="98" height="24" rx="12" fill="#1f6a52"/><text x="850" y="315" fill="#fff">Ready</text><text x="962" y="316" fill="#60706a">Log note</text>
+      <rect x="622" y="344" width="474" height="46" rx="12" fill="#fffdf7"/><text x="644" y="374" fill="#17231f">M. Lewis</text><rect x="826" y="355" width="98" height="24" rx="12" fill="#b9822e"/><text x="844" y="373" fill="#fff">Unclear</text><text x="962" y="374" fill="#60706a">Partner check</text>
+    </g>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="590" y="462" width="538" height="176" rx="24" fill="#fffdf7" stroke="#d7d0c1"/>
+    <text x="622" y="510" fill="#1f6a52" font-family="Courier New, monospace" font-size="16" font-weight="900" letter-spacing="3">CHASE CADENCE</text>
+    <g font-family="Segoe UI, sans-serif" font-size="18" font-weight="900" text-anchor="middle">
+      <circle cx="682" cy="574" r="38" fill="#dceadf"/><text x="682" y="581" fill="#173c32">T0</text>
+      <path d="M724 574h76" stroke="#173c32" stroke-width="4" stroke-dasharray="8 8"/>
+      <circle cx="842" cy="574" r="38" fill="#f8f1df"/><text x="842" y="581" fill="#173c32">+14</text>
+      <path d="M884 574h76" stroke="#173c32" stroke-width="4" stroke-dasharray="8 8"/>
+      <circle cx="1002" cy="574" r="38" fill="#f7ece7"/><text x="1002" y="581" fill="#173c32">+28</text>
+    </g>
+  </g>
+  <g transform="translate(946 96) rotate(8)">
+    <rect x="0" y="0" width="170" height="70" rx="10" fill="none" stroke="#a74739" stroke-width="5"/>
+    <text x="85" y="31" text-anchor="middle" fill="#a74739" font-family="Courier New, monospace" font-size="15" font-weight="900">APPROVED</text>
+    <text x="85" y="52" text-anchor="middle" fill="#a74739" font-family="Courier New, monospace" font-size="15" font-weight="900">WORDING</text>
+  </g>
+</svg>
