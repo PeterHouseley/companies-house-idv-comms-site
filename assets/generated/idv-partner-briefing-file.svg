@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 640" role="img" aria-labelledby="title desc">
+<title id="title">Partner briefing file for Director IDV communications</title>
+<desc id="desc">A premium practice file showing a partner decision note, approved staff script, director evidence ledger and reminder cadence for Companies House ID verification client communications.</desc>
+<defs>
+  <filter id="lift" x="-10%" y="-20%" width="125%" height="155%"><feDropShadow dx="0" dy="26" stdDeviation="22" flood-color="#173c32" flood-opacity="0.18"/></filter>
+  <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse"><path d="M38 0H0v38" fill="none" stroke="#173c32" stroke-opacity=".055"/></pattern>
+  <style>
+    .bg{fill:#f5f0e4}.paper{fill:#fffdf7;stroke:#b9c8bf}.deep{fill:#173c32}.green{fill:#1f6a52}.mint{fill:#dceadf}.amber{fill:#d8a24f}.red{fill:#a74739}.ink{fill:#17231f}.muted{fill:#60706a}.rule{stroke:#d7d0c1;stroke-width:2}.stamp{font:900 15px 'Courier New',monospace;letter-spacing:.13em}.mono{font:900 13px 'Courier New',monospace;letter-spacing:.09em}.sans{font-family:Aptos,'Segoe UI',sans-serif;font-weight:800}.serif{font-family:Georgia,'Times New Roman',serif;font-weight:700}
+  </style>
+</defs>
+<rect width="1180" height="640" rx="38" class="bg"/><rect width="1180" height="640" rx="38" fill="url(#grid)"/>
+<circle cx="1010" cy="116" r="98" fill="none" stroke="#1f6a52" stroke-opacity=".2" stroke-width="2"/><circle cx="1010" cy="116" r="64" fill="none" stroke="#b9822e" stroke-opacity=".28" stroke-width="2"/>
+<text x="54" y="66" class="mono" fill="#1f6a52">COMPANIES HOUSE IDV / PARTNER BRIEFING FILE</text>
+<text x="54" y="124" class="serif ink" font-size="54">One practice position. One client message. One audit trail.</text>
+<g filter="url(#lift)">
+  <rect x="60" y="178" width="332" height="374" rx="24" class="paper"/>
+  <rect x="84" y="206" width="142" height="30" rx="15" class="deep"/><text x="101" y="227" class="mono" font-size="13" fill="#fff">DECISION NOTE</text>
+  <text x="84" y="283" class="serif ink" font-size="34">Partner sign-off</text>
+  <text x="84" y="322" class="sans muted" font-size="17">• Practice position</text>
+  <text x="84" y="354" class="sans muted" font-size="17">• Client-safe boundaries</text>
+  <text x="84" y="386" class="sans muted" font-size="17">• Escalation rules</text>
+  <path class="rule" d="M84 428h250M84 462h214M84 496h236"/>
+  <g transform="translate(224 436) rotate(-8)"><rect x="0" y="0" width="112" height="42" rx="6" fill="none" stroke="#a74739" stroke-width="4"/><text x="15" y="27" class="stamp" font-size="12" fill="#a74739">APPROVED</text></g>
+</g>
+<g filter="url(#lift)">
+  <rect x="424" y="156" width="358" height="418" rx="26" class="paper"/>
+  <rect x="452" y="186" width="126" height="30" rx="15" class="green"/><text x="470" y="207" class="mono" font-size="13" fill="#fff">STAFF SCRIPT</text>
+  <text x="452" y="262" class="serif ink" font-size="35">What to send when asked</text>
+  <rect x="452" y="302" width="282" height="54" rx="14" fill="#dceadf"/><text x="474" y="335" class="sans ink" font-size="17">Email explainer + FAQ link</text>
+  <rect x="452" y="372" width="282" height="54" rx="14" fill="#f6ead0"/><text x="474" y="405" class="sans ink" font-size="17">Phone answer boundaries</text>
+  <rect x="452" y="442" width="282" height="54" rx="14" fill="#f0d7d1"/><text x="474" y="475" class="sans ink" font-size="17">Escalate unresolved cases</text>
+  <path d="M748 320v158" stroke="#173c32" stroke-opacity=".26" stroke-width="3" stroke-dasharray="8 8"/>
+</g>
+<g filter="url(#lift)">
+  <rect x="814" y="200" width="306" height="330" rx="24" class="deep"/>
+  <text x="842" y="242" class="mono" font-size="13" fill="#dceadf">DIRECTOR EVIDENCE LEDGER</text>
+  <g class="sans" font-size="15">
+    <rect x="842" y="276" width="238" height="44" rx="12" fill="#fffdf7"/><text x="860" y="304" fill="#17231f">Briefed</text><text x="1034" y="304" fill="#1f6a52">42</text>
+    <rect x="842" y="336" width="238" height="44" rx="12" fill="#fffdf7"/><text x="860" y="364" fill="#17231f">Chase due</text><text x="1034" y="364" fill="#b9822e">17</text>
+    <rect x="842" y="396" width="238" height="44" rx="12" fill="#fffdf7"/><text x="860" y="424" fill="#17231f">No reply</text><text x="1042" y="424" fill="#a74739">8</text>
+    <rect x="842" y="456" width="238" height="44" rx="12" fill="#fffdf7"/><text x="860" y="484" fill="#17231f">Partner review</text><text x="1042" y="484" fill="#b9822e">5</text>
+  </g>
+</g>
+<path d="M392 362 C 430 302, 456 302, 494 362" stroke="#1f6a52" stroke-width="4" stroke-dasharray="10 9" fill="none"/><path d="M780 362 C 820 302, 850 302, 890 362" stroke="#1f6a52" stroke-width="4" stroke-dasharray="10 9" fill="none"/>
+<rect x="72" y="574" width="588" height="34" rx="17" fill="#173c32"/><text x="94" y="596" class="mono" font-size="12" fill="#fff">ADMINISTRATIVE COMMUNICATIONS SUPPORT ONLY · NOT ID CHECKING · NOT LEGAL ADVICE</text>
+</svg>
