@@ -133,5 +133,57 @@ partner_briefing = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 
 </svg>'''
 (out / 'idv-partner-briefing-file.svg').write_text(partner_briefing)
 
-for asset in ['idv-comms-workflow.svg', 'idv-deadline-control-room.svg', 'idv-partner-briefing-file.svg']:
+correspondence_desk = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 650" role="img" aria-labelledby="title desc">
+<title id="title">Director IDV correspondence desk</title>
+<desc id="desc">A premium compliance correspondence desk with a client letter, FAQ card, call note, readiness ledger and dated chase slips for a Companies House ID verification rollout.</desc>
+<defs>
+  <filter id="deskShadow" x="-12%" y="-18%" width="130%" height="150%"><feDropShadow dx="0" dy="28" stdDeviation="24" flood-color="#173c32" flood-opacity="0.20"/></filter>
+  <pattern id="fibres" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0v44" fill="none" stroke="#173c32" stroke-opacity=".045"/><circle cx="9" cy="28" r="1.4" fill="#b9822e" fill-opacity=".18"/></pattern>
+  <style>
+    .bg{fill:#efe7d8}.paper{fill:#fffdf7;stroke:#c7bda9}.green{fill:#1f6a52}.deep{fill:#173c32}.mint{fill:#dceadf}.amber{fill:#d8a24f}.red{fill:#a74739}.ink{fill:#17231f}.muted{fill:#60706a}.rule{stroke:#d7d0c1;stroke-width:2}.serif{font-family:Georgia,'Times New Roman',serif;font-weight:700}.sans{font-family:Aptos,'Segoe UI',sans-serif;font-weight:800}.mono{font-family:'Courier New',monospace;font-weight:900;letter-spacing:.11em}
+  </style>
+</defs>
+<rect width="1180" height="650" rx="38" class="bg"/><rect width="1180" height="650" rx="38" fill="url(#fibres)"/>
+<text x="54" y="68" class="mono" font-size="15" fill="#1f6a52">PRACTICE CORRESPONDENCE DESK / DIRECTOR IDV</text>
+<text x="54" y="126" class="serif ink" font-size="58">Approved wording, not inbox improvisation.</text>
+<g filter="url(#deskShadow)">
+  <g transform="translate(72 188) rotate(-2)">
+    <rect width="376" height="384" rx="24" class="paper"/>
+    <rect x="28" y="28" width="134" height="30" rx="15" class="deep"/><text x="45" y="49" class="mono" font-size="13" fill="#fff">CLIENT LETTER</text>
+    <text x="28" y="116" class="serif ink" font-size="35">What directors need to know</text>
+    <path d="M30 154h284M30 188h326M30 222h296M30 256h244" class="rule"/>
+    <rect x="30" y="304" width="272" height="38" rx="19" class="mint"/><text x="51" y="329" class="sans" font-size="16" fill="#173c32">Boundary note included</text>
+  </g>
+</g>
+<g filter="url(#deskShadow)">
+  <g transform="translate(420 166)">
+    <rect width="318" height="210" rx="24" class="paper"/>
+    <text x="28" y="48" class="mono" font-size="13" fill="#1f6a52">FAQ CARD</text>
+    <text x="28" y="92" class="serif ink" font-size="32">Questions staff can answer safely</text>
+    <path d="M28 126h250M28 158h214" class="rule"/>
+  </g>
+</g>
+<g filter="url(#deskShadow)">
+  <g transform="translate(770 180) rotate(1.4)">
+    <rect width="320" height="356" rx="24" class="deep"/>
+    <text x="28" y="48" class="mono" font-size="13" fill="#dceadf">READINESS LEDGER</text>
+    <rect x="28" y="82" width="256" height="50" rx="13" fill="#fffdf7"/><text x="48" y="114" class="sans" font-size="16" fill="#17231f">Explainer sent</text><text x="244" y="114" class="sans" font-size="16" fill="#1f6a52">42</text>
+    <rect x="28" y="150" width="256" height="50" rx="13" fill="#fffdf7"/><text x="48" y="182" class="sans" font-size="16" fill="#17231f">Reminder due</text><text x="244" y="182" class="sans" font-size="16" fill="#b9822e">17</text>
+    <rect x="28" y="218" width="256" height="50" rx="13" fill="#fffdf7"/><text x="48" y="250" class="sans" font-size="16" fill="#17231f">Partner review</text><text x="252" y="250" class="sans" font-size="16" fill="#a74739">5</text>
+    <path d="M30 304h192" stroke="#dceadf" stroke-opacity=".35" stroke-width="2"/>
+  </g>
+</g>
+<g filter="url(#deskShadow)">
+  <g transform="translate(438 420) rotate(-1)">
+    <rect width="284" height="116" rx="18" fill="#f6ead0" stroke="#c7bda9"/>
+    <text x="24" y="43" class="mono" font-size="12" fill="#8b5a18">CHASE SLIP / 7 DAYS</text>
+    <text x="24" y="78" class="sans" font-size="17" fill="#17231f">Polite reminder, dated and logged.</text>
+  </g>
+</g>
+<g transform="translate(918 72) rotate(9)"><circle cx="0" cy="0" r="68" fill="none" stroke="#a74739" stroke-width="5"/><circle cx="0" cy="0" r="48" fill="none" stroke="#a74739" stroke-opacity=".55" stroke-width="2"/><text x="-38" y="-4" class="mono" font-size="13" fill="#a74739">NOT LEGAL</text><text x="-28" y="18" class="mono" font-size="13" fill="#a74739">ADVICE</text></g>
+<rect x="72" y="592" width="650" height="34" rx="17" fill="#173c32"/><text x="96" y="614" class="mono" font-size="12" fill="#fff">EVERY CLIENT TOUCHPOINT HAS AN OWNER · A WORDING SOURCE · A NEXT CHASE DATE</text>
+</svg>'''
+(out / 'idv-correspondence-desk.svg').write_text(correspondence_desk)
+
+for asset in ['idv-comms-workflow.svg', 'idv-deadline-control-room.svg', 'idv-partner-briefing-file.svg', 'idv-correspondence-desk.svg']:
     print(out / asset)
