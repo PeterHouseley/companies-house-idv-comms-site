@@ -185,5 +185,44 @@ correspondence_desk = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11
 </svg>'''
 (out / 'idv-correspondence-desk.svg').write_text(correspondence_desk)
 
-for asset in ['idv-comms-workflow.svg', 'idv-deadline-control-room.svg', 'idv-partner-briefing-file.svg', 'idv-correspondence-desk.svg']:
+evidence_matrix = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 620" role="img" aria-labelledby="title desc">
+<title id="title">Director IDV evidence matrix</title>
+<desc id="desc">A compliance evidence matrix connecting director readiness states, approved client wording, chase dates and partner exception notes.</desc>
+<defs>
+  <filter id="lift" x="-10%" y="-20%" width="125%" height="155%"><feDropShadow dx="0" dy="28" stdDeviation="24" flood-color="#173c32" flood-opacity="0.18"/></filter>
+  <pattern id="ticks" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0v44" fill="none" stroke="#173c32" stroke-opacity=".05"/></pattern>
+  <style>
+    .bg{fill:#f6f1e6}.paper{fill:#fffdf7;stroke:#b9c8bf}.deep{fill:#173c32}.green{fill:#1f6a52}.mint{fill:#dceadf}.amber{fill:#dba64c}.red{fill:#a74739}.ink{fill:#17231f}.muted{fill:#60706a}.rule{stroke:#d7d0c1;stroke-width:2}.mono{font-family:'Courier New',monospace;font-weight:900;letter-spacing:.1em}.sans{font-family:Aptos,'Segoe UI',sans-serif;font-weight:800}.serif{font-family:Georgia,'Times New Roman',serif;font-weight:700}
+  </style>
+</defs>
+<rect width="1180" height="620" rx="38" class="bg"/><rect width="1180" height="620" rx="38" fill="url(#ticks)"/>
+<text x="54" y="66" class="mono" font-size="15" fill="#1f6a52">DIRECTOR IDV / PRACTICE EVIDENCE MATRIX</text>
+<text x="54" y="122" class="serif ink" font-size="54">Every director has a status. Every chase has approved wording.</text>
+<g filter="url(#lift)">
+  <rect x="58" y="170" width="724" height="360" rx="26" class="paper"/>
+  <rect x="88" y="202" width="664" height="54" rx="16" class="deep"/>
+  <text x="112" y="236" class="mono" font-size="13" fill="#fff">DIRECTOR</text><text x="318" y="236" class="mono" font-size="13" fill="#fff">READINESS</text><text x="514" y="236" class="mono" font-size="13" fill="#fff">NEXT MESSAGE</text>
+  <g class="sans" font-size="16">
+    <rect x="88" y="278" width="664" height="48" rx="13" fill="#f8f4e9"/><text x="112" y="309" fill="#17231f">A. Patel</text><rect x="312" y="288" width="94" height="28" rx="14" class="green"/><text x="331" y="307" fill="#fff">Briefed</text><text x="512" y="309" fill="#60706a">Send FAQ boundary note</text>
+    <rect x="88" y="342" width="664" height="48" rx="13" fill="#eef5ed"/><text x="112" y="373" fill="#17231f">M. Lewis</text><rect x="312" y="352" width="108" height="28" rx="14" class="amber"/><text x="331" y="371" fill="#17231f">Unclear</text><text x="512" y="373" fill="#60706a">Partner exception review</text>
+    <rect x="88" y="406" width="664" height="48" rx="13" fill="#f8f4e9"/><text x="112" y="437" fill="#17231f">R. Hughes</text><rect x="312" y="416" width="100" height="28" rx="14" class="red"/><text x="332" y="435" fill="#fff">Silent</text><text x="512" y="437" fill="#60706a">Chase 2 due Friday</text>
+    <rect x="88" y="470" width="664" height="48" rx="13" fill="#eef5ed"/><text x="112" y="501" fill="#17231f">S. Khan</text><rect x="312" y="480" width="92" height="28" rx="14" class="green"/><text x="333" y="499" fill="#fff">Ready</text><text x="512" y="501" fill="#60706a">Log complete + archive</text>
+  </g>
+</g>
+<g filter="url(#lift)">
+  <rect x="824" y="178" width="292" height="338" rx="26" class="deep"/>
+  <text x="854" y="222" class="mono" font-size="13" fill="#dceadf">PARTNER EXCEPTION QUEUE</text>
+  <path d="M854 250h214" stroke="#dceadf" stroke-opacity=".28" stroke-width="2"/>
+  <g class="sans" font-size="15">
+    <rect x="854" y="278" width="224" height="58" rx="14" fill="#fffdf7"/><text x="874" y="302" fill="#17231f">Legal boundary question</text><text x="874" y="323" fill="#60706a">do not answer from inbox</text>
+    <rect x="854" y="358" width="224" height="58" rx="14" fill="#fffdf7"/><text x="874" y="382" fill="#17231f">No response after chase</text><text x="874" y="403" fill="#60706a">escalate before deadline</text>
+    <rect x="854" y="438" width="224" height="42" rx="21" class="mint"/><text x="880" y="465" fill="#173c32">Weekly partner digest</text>
+  </g>
+</g>
+<path d="M766 352 C 812 304, 838 304, 884 352" stroke="#1f6a52" stroke-width="4" stroke-dasharray="10 9" fill="none"/>
+<g transform="translate(936 74) rotate(8)"><rect x="0" y="0" width="154" height="54" rx="8" fill="none" stroke="#a74739" stroke-width="4"/><text x="20" y="34" class="mono" font-size="14" fill="#a74739">DATED TRAIL</text></g>
+</svg>'''
+(out / 'idv-evidence-matrix.svg').write_text(evidence_matrix)
+
+for asset in ['idv-comms-workflow.svg', 'idv-deadline-control-room.svg', 'idv-partner-briefing-file.svg', 'idv-correspondence-desk.svg', 'idv-evidence-matrix.svg']:
     print(out / asset)
