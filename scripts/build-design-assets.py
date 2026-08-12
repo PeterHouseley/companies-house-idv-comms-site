@@ -224,5 +224,52 @@ evidence_matrix = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 6
 </svg>'''
 (out / 'idv-evidence-matrix.svg').write_text(evidence_matrix)
 
-for asset in ['idv-comms-workflow.svg', 'idv-deadline-control-room.svg', 'idv-partner-briefing-file.svg', 'idv-correspondence-desk.svg', 'idv-evidence-matrix.svg']:
+client_question_queue = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 640" role="img" aria-labelledby="title desc">
+<title id="title">Director IDV client question queue</title>
+<desc id="desc">A professional compliance communications visual showing director questions triaged into approved answers, partner review and logged follow-up for Companies House ID verification.</desc>
+<defs>
+  <filter id="lift" x="-10%" y="-18%" width="125%" height="150%"><feDropShadow dx="0" dy="30" stdDeviation="24" flood-color="#173c32" flood-opacity="0.18"/></filter>
+  <pattern id="ruled" width="100" height="34" patternUnits="userSpaceOnUse"><path d="M0 33.5H100" stroke="#173c32" stroke-opacity=".055"/></pattern>
+  <style>
+    .bg{fill:#f3eee2}.paper{fill:#fffdf7;stroke:#c7bda9}.deep{fill:#173c32}.green{fill:#1f6a52}.mint{fill:#dceadf}.amber{fill:#d9a550}.red{fill:#a74739}.ink{fill:#17231f}.muted{fill:#60706a}.rule{stroke:#d7d0c1;stroke-width:2}.mono{font-family:'Courier New',monospace;font-weight:900;letter-spacing:.1em}.sans{font-family:Aptos,'Segoe UI',sans-serif;font-weight:800}.serif{font-family:Georgia,'Times New Roman',serif;font-weight:700}
+  </style>
+</defs>
+<rect width="1180" height="640" rx="38" class="bg"/><rect width="1180" height="640" rx="38" fill="url(#ruled)"/>
+<text x="54" y="70" class="mono" font-size="15" fill="#1f6a52">DIRECTOR IDV / CLIENT QUESTION QUEUE</text>
+<text x="54" y="128" class="serif ink" font-size="58">No staff member should invent the answer twice.</text>
+<g filter="url(#lift)">
+  <rect x="64" y="180" width="322" height="340" rx="28" class="paper"/>
+  <rect x="92" y="212" width="120" height="30" rx="15" class="deep"/><text x="110" y="233" class="mono" font-size="13" fill="#fff">INBOX</text>
+  <text x="92" y="292" class="serif ink" font-size="34">Client questions</text>
+  <g class="sans" font-size="16">
+    <rect x="92" y="326" width="244" height="44" rx="13" fill="#f6ead0"/><text x="112" y="354" fill="#17231f">“Do I need to verify?”</text>
+    <rect x="92" y="386" width="244" height="44" rx="13" fill="#eef5ed"/><text x="112" y="414" fill="#17231f">“Can you do it for me?”</text>
+    <rect x="92" y="446" width="244" height="44" rx="13" fill="#f0d7d1"/><text x="112" y="474" fill="#17231f">“What if I miss it?”</text>
+  </g>
+</g>
+<path d="M390 350 C 430 298, 466 298, 506 350" stroke="#1f6a52" stroke-width="4" stroke-dasharray="10 9" fill="none"/>
+<g filter="url(#lift)">
+  <rect x="466" y="158" width="292" height="388" rx="28" class="deep"/>
+  <text x="496" y="204" class="mono" font-size="13" fill="#dceadf">TRIAGE RULES</text>
+  <text x="496" y="260" class="serif" font-size="34" fill="#fffdf7">Answer from the pack, or escalate.</text>
+  <g class="sans" font-size="15">
+    <rect x="496" y="304" width="220" height="48" rx="14" class="mint"/><text x="516" y="334" fill="#173c32">Approved explainer</text>
+    <rect x="496" y="372" width="220" height="48" rx="14" fill="#f6ead0"/><text x="516" y="402" fill="#173c32">Boundary wording</text>
+    <rect x="496" y="440" width="220" height="48" rx="14" fill="#f0d7d1"/><text x="516" y="470" fill="#173c32">Partner exception</text>
+  </g>
+</g>
+<path d="M760 350 C 800 298, 836 298, 876 350" stroke="#1f6a52" stroke-width="4" stroke-dasharray="10 9" fill="none"/>
+<g filter="url(#lift)">
+  <rect x="830" y="188" width="292" height="332" rx="28" class="paper"/>
+  <rect x="858" y="220" width="142" height="30" rx="15" class="green"/><text x="878" y="241" class="mono" font-size="13" fill="#fff">LOGGED REPLY</text>
+  <text x="858" y="296" class="serif ink" font-size="32">One calm answer trail</text>
+  <path d="M858 330h218M858 362h186M858 394h232" class="rule"/>
+  <rect x="858" y="436" width="214" height="44" rx="22" class="mint"/><text x="884" y="464" class="sans" font-size="16" fill="#173c32">Tracker updated</text>
+</g>
+<g transform="translate(908 86) rotate(7)"><rect width="170" height="56" rx="8" fill="none" stroke="#a74739" stroke-width="4"/><text x="22" y="35" class="mono" font-size="14" fill="#a74739">NO AD-HOC DRIFT</text></g>
+<rect x="72" y="574" width="690" height="34" rx="17" fill="#173c32"/><text x="96" y="596" class="mono" font-size="12" fill="#fff">QUESTION CAPTURE → APPROVED ANSWER → ESCALATION IF NEEDED → DATED TRACKER ENTRY</text>
+</svg>'''
+(out / 'idv-client-question-queue.svg').write_text(client_question_queue)
+
+for asset in ['idv-comms-workflow.svg', 'idv-deadline-control-room.svg', 'idv-partner-briefing-file.svg', 'idv-correspondence-desk.svg', 'idv-evidence-matrix.svg', 'idv-client-question-queue.svg']:
     print(out / asset)
