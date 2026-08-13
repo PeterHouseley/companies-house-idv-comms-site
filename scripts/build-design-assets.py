@@ -271,5 +271,45 @@ client_question_queue = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 
 </svg>'''
 (out / 'idv-client-question-queue.svg').write_text(client_question_queue)
 
-for asset in ['idv-comms-workflow.svg', 'idv-deadline-control-room.svg', 'idv-partner-briefing-file.svg', 'idv-correspondence-desk.svg', 'idv-evidence-matrix.svg', 'idv-client-question-queue.svg']:
+risk_register = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 650" role="img" aria-labelledby="title desc">
+<title id="title">Director IDV rollout risk register</title>
+<desc id="desc">A partner-ready risk register for a Companies House ID verification communications rollout, showing routine communications, amber chasers, red silent directors and partner exception decisions.</desc>
+<defs>
+  <filter id="lift" x="-10%" y="-18%" width="126%" height="150%"><feDropShadow dx="0" dy="30" stdDeviation="24" flood-color="#173c32" flood-opacity="0.18"/></filter>
+  <pattern id="papergrid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0v42" fill="none" stroke="#173c32" stroke-opacity=".05"/><circle cx="12" cy="30" r="1.2" fill="#b9822e" fill-opacity=".18"/></pattern>
+  <style>
+    .bg{fill:#f6f1e6}.sheet{fill:#fffdf7;stroke:#b9c8bf}.deep{fill:#173c32}.green{fill:#1f6a52}.mint{fill:#dceadf}.amber{fill:#d9a550}.red{fill:#a74739}.ink{fill:#17231f}.muted{fill:#60706a}.rule{stroke:#d7d0c1;stroke-width:2}.mono{font-family:'Courier New',monospace;font-weight:900;letter-spacing:.1em}.sans{font-family:Aptos,'Segoe UI',sans-serif;font-weight:800}.serif{font-family:Georgia,'Times New Roman',serif;font-weight:700}
+  </style>
+</defs>
+<rect width="1180" height="650" rx="38" class="bg"/><rect width="1180" height="650" rx="38" fill="url(#papergrid)"/>
+<text x="54" y="68" class="mono" font-size="15" fill="#1f6a52">COMPANIES HOUSE IDV / PARTNER RISK REGISTER</text>
+<text x="54" y="126" class="serif ink" font-size="58">Routine nudges stay routine. Exceptions reach a partner.</text>
+<g filter="url(#lift)">
+  <rect x="62" y="178" width="758" height="392" rx="28" class="sheet"/>
+  <rect x="94" y="214" width="696" height="58" rx="18" class="deep"/>
+  <text x="118" y="251" class="mono" font-size="13" fill="#fff">DIRECTOR</text><text x="332" y="251" class="mono" font-size="13" fill="#fff">RISK</text><text x="492" y="251" class="mono" font-size="13" fill="#fff">OWNER / NEXT ACTION</text>
+  <g class="sans" font-size="16">
+    <rect x="94" y="296" width="696" height="54" rx="14" fill="#f8f4e9"/><text x="118" y="330" fill="#17231f">A. Patel</text><rect x="326" y="308" width="96" height="30" rx="15" class="green"/><text x="348" y="328" fill="#fff">LOW</text><text x="492" y="330" fill="#60706a">Admin team · FAQ link sent</text>
+    <rect x="94" y="366" width="696" height="54" rx="14" fill="#eef5ed"/><text x="118" y="400" fill="#17231f">M. Lewis</text><rect x="326" y="378" width="106" height="30" rx="15" class="amber"/><text x="346" y="398" fill="#17231f">AMBER</text><text x="492" y="400" fill="#60706a">Client manager · chase by Friday</text>
+    <rect x="94" y="436" width="696" height="54" rx="14" fill="#f8f4e9"/><text x="118" y="470" fill="#17231f">R. Hughes</text><rect x="326" y="448" width="92" height="30" rx="15" class="red"/><text x="350" y="468" fill="#fff">RED</text><text x="492" y="470" fill="#60706a">Partner · silent after second chase</text>
+    <rect x="94" y="506" width="696" height="38" rx="19" class="mint"/><text x="118" y="531" fill="#173c32">Weekly digest: 17 routine chasers · 5 partner exceptions · 0 unowned inbox threads</text>
+  </g>
+</g>
+<g filter="url(#lift)">
+  <rect x="858" y="208" width="262" height="318" rx="28" class="deep"/>
+  <text x="888" y="250" class="mono" font-size="13" fill="#dceadf">EXCEPTION RULES</text>
+  <path d="M888 278h190" stroke="#dceadf" stroke-opacity=".3" stroke-width="2"/>
+  <g class="sans" font-size="15">
+    <rect x="888" y="306" width="194" height="52" rx="14" fill="#fffdf7"/><text x="908" y="338" fill="#17231f">Legal boundary</text>
+    <rect x="888" y="376" width="194" height="52" rx="14" fill="#fffdf7"/><text x="908" y="408" fill="#17231f">Deadline silence</text>
+    <rect x="888" y="446" width="194" height="44" rx="22" class="mint"/><text x="912" y="474" fill="#173c32">Partner digest</text>
+  </g>
+</g>
+<path d="M804 390 C 846 336, 880 336, 922 390" stroke="#1f6a52" stroke-width="4" stroke-dasharray="10 9" fill="none"/>
+<g transform="translate(918 80) rotate(7)"><rect width="164" height="58" rx="8" fill="none" stroke="#a74739" stroke-width="4"/><text x="26" y="36" class="mono" font-size="14" fill="#a74739">NO UNOWNED RISK</text></g>
+<rect x="72" y="594" width="690" height="34" rx="17" fill="#173c32"/><text x="96" y="616" class="mono" font-size="12" fill="#fff">STATUS · OWNER · NEXT CHASE DATE · PARTNER EXCEPTION · DATED AUDIT NOTE</text>
+</svg>'''
+(out / 'idv-risk-register.svg').write_text(risk_register)
+
+for asset in ['idv-comms-workflow.svg', 'idv-deadline-control-room.svg', 'idv-partner-briefing-file.svg', 'idv-correspondence-desk.svg', 'idv-evidence-matrix.svg', 'idv-client-question-queue.svg', 'idv-risk-register.svg']:
     print(out / asset)
