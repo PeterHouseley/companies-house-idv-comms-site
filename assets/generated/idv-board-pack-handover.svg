@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 650" role="img" aria-labelledby="title desc">
+<title id="title">Director IDV board pack handover</title>
+<desc id="desc">A professional accountancy practice handover bundle showing partner note, client bulletin, staff script, director tracker and weekly digest for Companies House ID verification communications.</desc>
+<defs>
+  <filter id="lift" x="-10%" y="-18%" width="126%" height="152%"><feDropShadow dx="0" dy="30" stdDeviation="24" flood-color="#173c32" flood-opacity="0.18"/></filter>
+  <pattern id="grain" width="46" height="46" patternUnits="userSpaceOnUse"><path d="M46 0H0v46" fill="none" stroke="#173c32" stroke-opacity=".045"/><circle cx="34" cy="13" r="1.4" fill="#b9822e" fill-opacity=".16"/></pattern>
+  <style>
+    .bg{fill:#f4eee1}.paper{fill:#fffdf7;stroke:#c7bda9}.folder{fill:#25483d}.tab{fill:#d3ad61}.deep{fill:#173c32}.green{fill:#1f6a52}.mint{fill:#dceadf}.amber{fill:#d9a550}.red{fill:#a74739}.ink{fill:#17231f}.muted{fill:#60706a}.rule{stroke:#d7d0c1;stroke-width:2}.mono{font-family:'Courier New',monospace;font-weight:900;letter-spacing:.1em}.sans{font-family:Aptos,'Segoe UI',sans-serif;font-weight:800}.serif{font-family:Georgia,'Times New Roman',serif;font-weight:700}
+  </style>
+</defs>
+<rect width="1180" height="650" rx="38" class="bg"/><rect width="1180" height="650" rx="38" fill="url(#grain)"/>
+<text x="54" y="68" class="mono" font-size="15" fill="#1f6a52">DIRECTOR IDV / PRACTICE HANDOVER BUNDLE</text>
+<text x="54" y="126" class="serif ink" font-size="58">The pack leaves as an operating file, not loose templates.</text>
+<g filter="url(#lift)">
+  <path d="M70 220h180l24-38h310c28 0 50 22 50 50v304c0 28-22 50-50 50H92c-28 0-50-22-50-50V248c0-16 12-28 28-28z" class="folder"/>
+  <rect x="86" y="262" width="506" height="270" rx="24" fill="#f8f4e9" stroke="#d7d0c1"/>
+  <rect x="112" y="292" width="154" height="32" rx="16" class="deep"/><text x="132" y="314" class="mono" font-size="13" fill="#fff">HANDOVER INDEX</text>
+  <g class="sans" font-size="16">
+    <rect x="112" y="354" width="430" height="44" rx="13" fill="#fffdf7"/><text x="134" y="382" fill="#17231f">01 Partner decision note</text><text x="448" y="382" fill="#1f6a52">SIGNED</text>
+    <rect x="112" y="414" width="430" height="44" rx="13" fill="#fffdf7"/><text x="134" y="442" fill="#17231f">02 Client bulletin + FAQ</text><text x="454" y="442" fill="#1f6a52">READY</text>
+    <rect x="112" y="474" width="430" height="44" rx="13" fill="#fffdf7"/><text x="134" y="502" fill="#17231f">03 Staff script + escalation rules</text><text x="434" y="502" fill="#b9822e">BRIEF</text>
+  </g>
+</g>
+<g filter="url(#lift)">
+  <g transform="translate(494 198) rotate(-2)">
+    <rect width="282" height="354" rx="24" class="paper"/>
+    <rect x="28" y="30" width="112" height="30" rx="15" class="green"/><text x="46" y="51" class="mono" font-size="13" fill="#fff">CLIENTS</text>
+    <text x="28" y="112" class="serif ink" font-size="34">Bulletin wording</text>
+    <path d="M30 152h214M30 184h232M30 216h198M30 248h220" class="rule"/>
+    <rect x="30" y="286" width="202" height="38" rx="19" class="mint"/><text x="52" y="311" class="sans" font-size="16" fill="#173c32">Plain-English FAQ</text>
+  </g>
+</g>
+<g filter="url(#lift)">
+  <g transform="translate(734 176) rotate(1.4)">
+    <rect width="350" height="380" rx="26" class="paper"/>
+    <rect x="30" y="32" width="134" height="30" rx="15" class="deep"/><text x="48" y="53" class="mono" font-size="13" fill="#fff">WEEKLY DIGEST</text>
+    <text x="30" y="110" class="serif ink" font-size="34">Partner view</text>
+    <rect x="30" y="146" width="282" height="50" rx="14" fill="#eef5ed"/><text x="52" y="178" class="sans" font-size="16" fill="#17231f">42 briefed / 17 chase due</text>
+    <rect x="30" y="214" width="282" height="50" rx="14" fill="#f6ead0"/><text x="52" y="246" class="sans" font-size="16" fill="#17231f">5 partner exceptions</text>
+    <rect x="30" y="282" width="282" height="50" rx="14" fill="#f0d7d1"/><text x="52" y="314" class="sans" font-size="16" fill="#17231f">0 unowned inbox risks</text>
+  </g>
+</g>
+<path d="M632 378 C 678 330, 710 330, 756 378" stroke="#1f6a52" stroke-width="4" stroke-dasharray="10 9" fill="none"/>
+<g transform="translate(920 78) rotate(7)"><rect width="162" height="58" rx="8" fill="none" stroke="#a74739" stroke-width="4"/><text x="22" y="36" class="mono" font-size="14" fill="#a74739">HANDOVER READY</text></g>
+<rect x="72" y="596" width="780" height="34" rx="17" fill="#173c32"/><text x="96" y="618" class="mono" font-size="12" fill="#fff">PARTNER NOTE · CLIENT BULLETIN · STAFF SCRIPT · DIRECTOR TRACKER · WEEKLY DIGEST</text>
+</svg>
