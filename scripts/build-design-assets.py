@@ -367,5 +367,25 @@ board_minutes = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 700
 </svg>'''
 (out / 'idv-board-minutes-pack.svg').write_text(board_minutes)
 
-for asset in ['idv-comms-workflow.svg', 'idv-deadline-control-room.svg', 'idv-partner-briefing-file.svg', 'idv-correspondence-desk.svg', 'idv-evidence-matrix.svg', 'idv-client-question-queue.svg', 'idv-risk-register.svg', 'idv-appointment-book.svg', 'idv-launch-docket.svg', 'idv-board-minutes-pack.svg']:
+client_assurance = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 700" role="img" aria-labelledby="title desc">
+<title id="title">Director IDV client assurance letter</title>
+<desc id="desc">A premium client assurance letter proof showing official source line, plain-English client notice, reply routing and partner boundary controls for Companies House identity verification communications.</desc>
+<defs>
+  <filter id="lift" x="-10%" y="-18%" width="126%" height="150%"><feDropShadow dx="0" dy="34" stdDeviation="28" flood-color="#173c32" flood-opacity="0.20"/></filter>
+  <pattern id="grain" width="52" height="52" patternUnits="userSpaceOnUse"><path d="M52 0H0v52" fill="none" stroke="#173c32" stroke-opacity=".045"/><circle cx="16" cy="34" r="1.3" fill="#b9822e" fill-opacity=".18"/></pattern>
+  <style>.bg{fill:#f4ede0}.paper{fill:#fffdf7;stroke:#c7bda9}.deep{fill:#173c32}.green{fill:#1f6a52}.mint{fill:#dceadf}.amber{fill:#d8a24f}.red{fill:#a74739}.ink{fill:#17231f}.muted{fill:#60706a}.rule{stroke:#d7d0c1;stroke-width:2}.mono{font-family:'Courier New',monospace;font-weight:900;letter-spacing:.11em}.sans{font-family:Aptos,'Segoe UI',sans-serif;font-weight:800}.serif{font-family:Georgia,'Times New Roman',serif;font-weight:700}</style>
+</defs>
+<rect width="1240" height="700" rx="42" class="bg"/><rect width="1240" height="700" rx="42" fill="url(#grain)"/>
+<text x="58" y="74" class="mono" font-size="15" fill="#1f6a52">DIRECTOR IDV / CLIENT ASSURANCE LETTER</text>
+<text x="58" y="138" class="serif ink" font-size="60">The first client notice should feel official, calm and owned.</text>
+<g filter="url(#lift)"><g transform="translate(70 194) rotate(-1.4)"><rect width="416" height="416" rx="30" class="paper"/><rect x="32" y="32" width="176" height="30" rx="15" class="deep"/><text x="52" y="53" class="mono" font-size="13" fill="#fff">CLIENT NOTICE</text><text x="32" y="120" class="serif ink" font-size="38">What this means for you</text><path d="M34 166h312M34 202h350M34 238h318M34 274h252" class="rule"/><rect x="34" y="328" width="284" height="44" rx="22" class="mint"/><text x="58" y="356" class="sans" font-size="16" fill="#173c32">Official source link visible</text></g></g>
+<path d="M492 408 C 538 340, 584 340, 630 408" stroke="#1f6a52" stroke-width="4" stroke-dasharray="10 9" fill="none"/>
+<g filter="url(#lift)"><rect x="580" y="178" width="348" height="452" rx="30" class="deep"/><text x="612" y="226" class="mono" font-size="13" fill="#dceadf">REPLY ROUTING RULES</text><text x="612" y="286" class="serif" font-size="36" fill="#fffdf7">Staff know what to answer — and what to escalate.</text><g class="sans" font-size="16"><rect x="612" y="330" width="260" height="54" rx="15" fill="#fffdf7"/><text x="634" y="364" fill="#17231f">Admin question · send FAQ</text><rect x="612" y="404" width="260" height="54" rx="15" fill="#fffdf7"/><text x="634" y="438" fill="#17231f">Route choice · official guidance</text><rect x="612" y="478" width="260" height="54" rx="15" fill="#fffdf7"/><text x="634" y="512" fill="#17231f">Complex case · partner review</text></g><path d="M612 566h236" stroke="#dceadf" stroke-opacity=".32" stroke-width="2"/></g>
+<path d="M930 408 C 970 340, 1012 340, 1052 408" stroke="#1f6a52" stroke-width="4" stroke-dasharray="10 9" fill="none"/>
+<g filter="url(#lift)"><g transform="translate(972 232) rotate(1.2)"><rect width="216" height="320" rx="28" class="paper"/><text x="30" y="48" class="mono" font-size="13" fill="#1f6a52">BOUNDARY STAMP</text><circle cx="108" cy="136" r="66" fill="none" stroke="#a74739" stroke-width="5"/><circle cx="108" cy="136" r="45" fill="none" stroke="#a74739" stroke-opacity=".55" stroke-width="2"/><text x="62" y="132" class="mono" font-size="13" fill="#a74739">NOT LEGAL</text><text x="78" y="154" class="mono" font-size="13" fill="#a74739">ADVICE</text><rect x="30" y="238" width="154" height="38" rx="19" class="mint"/><text x="54" y="263" class="sans" font-size="15" fill="#173c32">Partner owned</text></g></g>
+<rect x="74" y="632" width="826" height="34" rx="17" fill="#173c32"/><text x="98" y="654" class="mono" font-size="12" fill="#fff">OFFICIAL SOURCE → CLIENT NOTICE → STAFF REPLY RULE → PARTNER BOUNDARY → TRACKED OUTCOME</text>
+</svg>'''
+(out / 'idv-client-assurance-letter.svg').write_text(client_assurance)
+
+for asset in ['idv-comms-workflow.svg', 'idv-deadline-control-room.svg', 'idv-partner-briefing-file.svg', 'idv-correspondence-desk.svg', 'idv-evidence-matrix.svg', 'idv-client-question-queue.svg', 'idv-risk-register.svg', 'idv-appointment-book.svg', 'idv-launch-docket.svg', 'idv-board-minutes-pack.svg', 'idv-client-assurance-letter.svg']:
     print(out / asset)
